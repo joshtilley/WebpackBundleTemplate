@@ -1,7 +1,7 @@
 {
-  "name": "restaurant-page",
+  "name": "placeholder",
   "version": "1.0.0",
-  "description": "restaurant webpage using webpack",
+  "description": "",
   "main": "./src/index.js",
   "private": true,
   "scripts": {

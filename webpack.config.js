@@ -1,39 +1,38 @@
-const path = require('path');
+const path = require("path");
 
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 // const { watch } = require('fs');
 
 module.exports = {
   entry: {
-   index: './src/index.js',
+    index: "./src/index.js",
   },
   output: {
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: "[name].js",
+    path: path.resolve(__dirname, "dist"),
     clean: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html',
+      template: "./src/index.html",
     }),
-    
   ],
   module: {
-   rules: [
-     {
+    rules: [
+      {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-     },
-     {
+        use: ["style-loader", "css-loader"],
+      },
+      {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
-     },
-     {
+        type: "asset/resource",
+      },
+      {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-     }
-   ],
+        type: "asset/resource",
+      },
+    ],
   },
-  watch: false,
-  mode: 'development',
+  watch: true,
+  mode: "development",
 };
