@@ -1,6 +1,10 @@
 :root {
   height: 100%;
+  /* colours */
+}
+
+body {
+  height: inherit;
   margin: 0;
   padding: 0;
-  /* colours */
 }
